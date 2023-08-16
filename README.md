@@ -23,3 +23,11 @@ Estrutura extendida do for sem a necessidade de um index
 ```
 for(index of Result)
 ```
+
+### REDUCE
+Utilizado para pegar elementos de um Array [] e transformar em um único valor.
+```
+const total = pesos.reduce((anterior, proximo) => {
+        return anterior + proximo
+    }, 0)   
+```
