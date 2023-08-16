@@ -13,4 +13,6 @@ Estrutura padrão para percorrer elementos
 
 ## FOR IN
 Estrutura extendida do for
-[code] for(index in Result) { Result[index] }
+```
+for(index in Result) { Result[index] }
+```
