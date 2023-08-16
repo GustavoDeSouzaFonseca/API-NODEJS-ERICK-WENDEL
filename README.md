@@ -1,18 +1,25 @@
 # API-NODEJS-ERICK-WENDEL
 Lerninig api nodejs with magic Erick Wendel
 
-## Promises
+### Promises
 Utilizado para ações de uma única vez
 
-## Event Emiter
+### Event Emiter
 Usado para ações contínuas
 
-## FOR
+### FOR
 Estrutura padrão para percorrer elementos
-[code] for(let i = 0; i <= RESULTADO.lenght -1; i++)
-
-## FOR IN
+```
+for(let i = 0; i <= RESULTADO.lenght -1; i++)
+```
+### FOR IN
 Estrutura extendida do for
 ```
 for(index in Result) { Result[index] }
+```
+
+### FOR OF
+Estrutura extendida do for sem a necessidade de um index
+```
+for(index of Result)
 ```
