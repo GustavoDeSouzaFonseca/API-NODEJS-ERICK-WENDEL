@@ -15,20 +15,28 @@ async function main(){
         
         const results = await service.obterPessoas('a')
         
-        // const names = []
-        // results.results.forEach(function (item) {
-        //     names.push(item.name)
-        // })
+        console.time('forEach')
+        const names = []
+        results.results.forEach(function (item) {
+            names.push(item.name)
+        })
+        console.timeEnd('forEach')
 
-        // const names = results.results.map(function (pessoa) {
-        //     return pessoa.name
-        // })
+        console.time('map')
+        const names2 = results.results.map(function (pessoa) {
+            return pessoa.name
+        })
+        console.timeEnd('map')
 
-        // const names = results.results.map((pessoa) => pessoa.name)
+        console.time('mapDireto')
+        const names3 = results.results.map((pessoa) => pessoa.name)
+        console.timeEnd('mapDireto')
 
-        const names = results.results.meuMap(function (pessoa, indice) {
+        console.time('meuMap')
+        const names4 = results.results.meuMap(function (pessoa, indice) {
             return `[${indice}]${pessoa.name}`
         })
+        console.timeEnd('meuMap')
         
         console.log("names", names)
 
