@@ -31,3 +31,26 @@ const total = pesos.reduce((anterior, proximo) => {
         return anterior + proximo
     }, 0)   
 ```
+
+## TESTS 
+### MOCHA
+O mocha é a área de testes que tem como padrão uma descrição e o que ele deve fazer, 
+assim passando uma variável esperada e passar a sua resposta para validar se está correta.
+
+```
+describe("Nome do conjunto de testes" () => {
+    it("Descrição do teste", () => {
+        Código de teste aqui!
+    });
+});
+```
+
+### ASSERT
+```
+assert.ok()
+```
+valida se está tudo certo
+
+```
+assert.deepEqual( recebe uma response, e uma resposta de validação)
+```
