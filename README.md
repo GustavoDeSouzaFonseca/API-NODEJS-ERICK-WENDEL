@@ -54,3 +54,14 @@ valida se está tudo certo
 ```
 assert.deepEqual( recebe uma response, e uma resposta de validação)
 ```
+
+### NOCK
+Biblioteca que tem o poder de replicar o que poderia ser um endpoint que levam algum tempo
+para um response que deve ser o certo para diminuir o tempo e não ficar fazendo várias 
+requisições de teste
+
+```
+nock("api")
+.method('/?search=r2-d2&format=json')
+.reply("passando json padrão")
+```
