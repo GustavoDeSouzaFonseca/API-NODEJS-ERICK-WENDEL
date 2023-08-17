@@ -65,3 +65,5 @@ nock("api")
 .method('/?search=r2-d2&format=json')
 .reply("passando json padrão")
 ```
+
+## CRUD
